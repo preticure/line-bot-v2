@@ -1,0 +1,39 @@
+name = "my-app"
+compatibility_date = "2023-12-01"
+
+account_id = "a6791e3166f85e727241584bedf70f3c"
+workers_dev = true
+node_compat = true  # Node.js互換モードを有効にする
+
+main = "./dist/index.js"  # ビルド後のエントリーポイントを指定
+
+[triggers]
+  crons = ["0 21 * * *"]
+
+# 環境変数を設定する場合は、以下のようにコメントを解除してください。
+# [vars]
+# MY_VAR = "my-variable"
+
+# KV Namespace を使用する場合は、以下のようにコメントを解除してください。
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "your-kv-namespace-id"
+
+# R2 バケットを使用する場合は、以下のようにコメントを解除してください。
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# D1 データベースを使用する場合は、以下のようにコメントを解除してください。
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = "your-database-id"
+
+# AI バインディングを使用する場合は、以下のようにコメントを解除してください。
+# [ai]
+# binding = "AI"
+
+[env.production]
+zone_id = "your-zone-id"
+route = "https://your-domain/*"

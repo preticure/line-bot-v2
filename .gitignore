@@ -4,6 +4,7 @@ dist
 .dev.vars
 src/config.ts
 qualified-root-423800-e1-c1ab73912481.json
+wrangler.toml
 
 # Change them to your taste:
 package-lock.json
