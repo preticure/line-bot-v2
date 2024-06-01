@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { handleWebhook, scheduledHandler } from './handler'
+import { handleWebhook, scheduledHandler } from '../src/handlers/index'
 
 const app = new Hono()
 
