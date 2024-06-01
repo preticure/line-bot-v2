@@ -2,7 +2,7 @@ node_modules
 dist
 .wrangler
 .dev.vars
-src/config.ts
+config/index.ts
 qualified-root-423800-e1-c1ab73912481.json
 wrangler.toml
 

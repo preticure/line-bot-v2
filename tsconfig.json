@@ -11,5 +11,5 @@
     "jsxImportSource": "hono/jsx",
     "outDir": "./dist" // 出力ディレクトリを指定
   },
-  "include": ["src"] // コンパイル対象のディレクトリを指定
+  "include": ["src", "src/utils"] // コンパイル対象のディレクトリを指定
 }
