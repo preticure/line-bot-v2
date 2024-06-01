@@ -5,6 +5,6 @@ export const getYesterdayDateString = () => {
 
   jstDate.setDate(jstDate.getDate() - 1)
   return `${jstDate.getFullYear()}/${
-    jstDate.getMinutes() + 1
+    jstDate.getMonth() + 1
   }/${jstDate.getDate()}`
 }
